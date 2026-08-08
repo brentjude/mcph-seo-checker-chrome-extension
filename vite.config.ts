@@ -9,6 +9,10 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      // jsPDF's unused `.html()` plugin dynamically imports these — stub them out
+      // so their code never ships in the packaged extension. See src/shims/empty-module.ts.
+      html2canvas: path.resolve(__dirname, './src/shims/empty-module.ts'),
+      dompurify: path.resolve(__dirname, './src/shims/empty-module.ts'),
     },
   },
   server: {
@@ -21,6 +25,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    sourcemap: true,
+    sourcemap: false,
   },
 });

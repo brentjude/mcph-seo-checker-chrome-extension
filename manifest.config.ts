@@ -27,5 +27,5 @@ export default defineManifest({
     service_worker: 'src/background/service-worker.ts',
     type: 'module',
   },
-  permissions: ['activeTab', 'scripting', 'storage'],
+  permissions: ['activeTab', 'scripting'],
 });
