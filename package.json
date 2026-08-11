@@ -1,8 +1,8 @@
 {
   "name": "mcph-seo-checker-chrome-extension",
   "private": true,
-  "version": "0.1.1",
-  "description": "Modern Chameleon Digital — SEO & AI Visibility Checker Chrome Extension",
+  "version": "0.1.2",
+  "description": "SEO & AI Visibility Checker Chrome Extension by Modern Chameleon Digital",
   "type": "module",
   "scripts": {
     "dev": "vite",
